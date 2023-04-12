@@ -1,0 +1,36 @@
+*{
+    background-color:  rgb(206, 175, 175);
+}
+
+.container{
+    width: 90vw;
+    height: 70vh;
+    border: 1px solid black;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.caja1{
+    width: 25vw;
+    height: 25vh;
+    background-color: orange;
+    border: 1px solid black;
+    
+}
+
+.caja2{
+    width: 25vw;
+    height: 25vh;
+    background-color: orange;
+    border: 1px solid black;
+
+}
+
+.caja3{
+    width: 25vw;
+    height: 25vh;
+    background-color: orange;
+    border: 1px solid black;
+
+}

@@ -1,0 +1,73 @@
+.caja1 p{
+    border: 1px solid black;
+    margin: 20px;
+    padding: 20px;
+    width: 300px;
+    height: 300px;
+    position: relative;
+    left: 200px;
+    top: 100px;
+    font-size: large;
+}
+
+.caja2{
+    border: 2px dotted red;
+    margin-top: 50px;
+    padding: 30px 20px 10px 40px;
+    position: relative;
+    top: 800px;
+}
+
+.caja2:hover{
+    transform: scale(0.5,0.5) rotate(60deg);
+}
+
+
+p{
+    background-color: brown;
+
+}
+
+.caja3 p{
+    color: white;
+    font-size: 25px;
+}
+
+.caja1:hover{
+    transition:background-color 5s ease-out,
+               border-radius 2s ease-in; 
+}
+
+.caja3 p:first-child{
+    color: blue;
+    font-size: 35px;
+}
+
+.caja3 p:last-child{
+    color: violet;
+    font-size: 35px;
+}
+
+.caja3 p:nth-child(2){
+    color: yellow;
+    font-size: 35px;
+}
+
+.caja3 p:nth-child(2n){
+    color: yellow;
+    font-size: 35px;
+}
+
+.caja3 p:nth-child(even){
+    color: royalblue;
+    font-size: 35px;
+}
+
+a:hover{
+    background-color: blueviolet;
+}
+
+p::first-letter{
+    color: aqua;
+    font-size: 50px;
+}

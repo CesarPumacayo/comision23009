@@ -1,0 +1,38 @@
+*{
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+h1{
+  text-align: center;
+}
+
+header{
+  background-color: orange;
+  color: white;
+}
+
+.link{
+  background-color: chocolate;
+  color: white;
+  text-decoration: none;
+  padding: 5px;
+  border-radius: 5px;
+  margin: 5px;
+}
+
+.icon{
+  color: white;
+}
+
+footer{
+  background-color: orange;
+  color: white;
+  text-align: center;
+  margin-top: 10px;
+}
+
+.imagen-receta{
+  text-align: center;
+}
+  
+  
+

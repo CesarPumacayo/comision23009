@@ -1,0 +1,94 @@
+*{
+    
+    background-color: beige;
+}
+
+h1{
+    align-items: center;
+}
+
+.container{
+    border: 2px solid black;
+    width: 75vw;
+    height: 75vh;
+    display: inline-flex;
+    flex-direction: row;
+}
+
+.caja1{
+    background-color: green;
+    width: 25%;
+    height:25%;
+    border: 1px solid black;
+}
+
+
+.caja1:hover{
+
+    transform: scale(0.5,0.5) translateX(100px);
+}
+
+.caja2{
+    background-color: pink;
+    width: 200px;
+    height: 200px;
+    border: 1px solid black;
+    transition: background-color 5s ease-out,
+                width 0.5s;
+}
+
+.caja2:hover{
+    background-color: blueviolet;
+    width: 400px;
+}
+
+
+.caja3{
+    background-color: orange;
+    width: 200px;
+    height: 200px;
+    border: 1px solid black;
+    
+}
+
+
+.caja3:hover{
+    animation: cambiarColor 3s;
+} 
+
+@keyframes cambiarColor{
+    from{
+        background-color: red;
+        font-size: small;
+    }
+    to{
+        background-color: aqua;
+        font-size: larger;
+    }
+}
+
+
+@media only screen and (max-width:650px ){
+
+*{background-color: pink;}
+
+.caja1{width: 250px;
+       height: 250px;}
+
+       .container{
+       
+        display: inline-flex;
+        flex-direction: column;
+    }
+
+}
+
+@media only screen and (max-width:400px ){
+
+    *{background-color: orange;}
+    .caja1{width: 150px;
+        height: 150px;}
+    h1{
+        display: none;
+    }
+    }

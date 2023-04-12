@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>formularios</title>
+    <link rel="stylesheet" href="CSS/style.css">
+    <script src="https://kit.fontawesome.com/66c85cf6ac.js" crossorigin="anonymous"></script>
+    
+</head>
+<body>
+    <header>
+        <nav>
+            <br>
+            
+            <a class="link" href="/laCocinaDeJuan/menu.html">Home</a>
+            <a class="link" href="/laCocinaDeJuan/Acerca_de.html">Acerca de</a>
+            <a class="link" href="/laCocinaDeJuan/contacto.html">Contacto</a>
+            <a class="link" href="/laCocinaDeJuan/sucursales.html">Sucursales</a>
+            <a class="link" href="/laCocinaDeJuan/formularios.html">Registrese</a>
+        </nav>
+        
+        <h1>La cocina de Juan</h1>
+    </header>
+    <h2>Formulario de registro</h2>
+
+    <form action="show_data.html" target="_blank">
+        <label for="firstname">Nombre:</label>
+        <input type="text" id="firstname" name="firstname" size="25" placeholder="Ingrese su nombre aquí...">
+        <label for="lastname">Apellido</label>
+        <input type="text" id="lastname" name="lastname" size="25" placeholder="Ingrese su apellido aquí...">
+        
+        <br>
+
+        <p>Direccion:</p>
+        <label for="calle">Calle:</label>
+        <input type="text" id="calle" name="calle" size="25" placeholder="Ingrese su calle aquí...">
+        
+        <label for="number">Numero:</label>
+        <input type="text" id="number" name="number" size="25" placeholder="Ingrese el número...">
+
+
+        <label for="city">Ciudad:</label>
+        <input type="text" id="city" name="city" size="25" placeholder="Ingrese la ciudad aquí..." value="CABA">
+
+        <label for="Code">Código Postal:</label>
+        <input type="text" id="Code" name="Code" size="25" placeholder="Ingrese su código postal aquí..."><br><br>
+    
+
+        <label for="telephone">Teléfono:</label>
+        <input type="text" id="telephone" name="telephone" size="25" placeholder="Ingrese su teléfono aquí...">
+        <label for="date">Fecha Nac:</label>
+        <input type="date" id="date" name="date">
+        <label for="mail">Mail:</label>
+        <input type="email" id="mail" name="mail" size="25">
+        <label for="clue">Clave:</label>
+        <input type="password" id="clue" name="clue" size="25">
+        <label for="link">Link del TP 3:</label>
+        <input type="url" id="link" name="link" size="25">
+
+        <br>
+
+        <p>Género (Radio)
+            <input type="radio" name="gender" value="hombre" checked>Hombre
+            <input type="radio" name="gender" value="Mujer">Mujer
+            <input type="radio" name="gender" value="Otro"> Otro
+        </p>
+
+        <p> Conocimientos previos: (checkbox)
+            <input type="checkbox" name="conocimientos" value="HTML"> HTML
+            <input type="checkbox" name="conocimientos" value="CSS"> CSS
+            <input type="checkbox" name="conocimientos" value="Bootstrap"> Bootstrap
+            <input type="checkbox" name="conocimientos" value="Javascript"> Javascript
+            <input type="checkbox" name="conocimientos" value="Typescript"> Typescript
+            <input type="checkbox" name="conocimientos" value="Angular"> Angular
+            <input type="checkbox" name="conocimientos" value="BaseDeDatos"> Base de Datos
+            <input type="checkbox" name="conocimientos" value="Python"> Python
+            <input type="checkbox" name="conocimientos" value="Django"> Django
+        </p>
+        
+        <label for="estudios">Estudios: (Select)</label>
+        <select id="estudios" name="estudios">
+            <option value="primaria">Primaria</option>
+            <option value="secundaria">Secundaria</option>
+            <option value="terciario">Terciario</option>
+            <option value="universitario">Universitario</option>
+            <option value="otros">Otro</option>
+        </select>
+        
+        <br><br>
+        
+        Comentarios: <br> <textarea name="comentarios" rows="5" cols="30"></textarea><br>
+        <input type="submit" value="Enviar">
+        
+            
+
+    </form>
+
+    <p>Si usted hace click en el boton "Enviar", la informacion sera enviada a la pagina "show_data_html".</p>
+    <footer>
+        <br>
+        <a class="icon" href="https://www.facebook.com" target="_blank"><i class="fa fa-facebook" aria-hidden="true"></i></a>
+        <a class="icon" href="https://www.twitter.com" target="_blank"><i class="fa fa-twitter" aria-hidden="true"></i></a>
+        <a class="icon" href="https://www.instagram.com" target="_blank"><i class="fa fa-instagram" aria-hidden="true"></i></a>
+        <a class="icon" href="https://www.pinterest.com" target="_blank"><i class="fa fa-pinterest" aria-hidden="true"></i></a>
+        <a class="icon" href="https://www.linkkedin.com" target="_blank"><i class="fa fa-linkedin" aria-hidden="true"></i></a>
+        <a class="icon" href="https://www.github.com" target="_blank"><i class="fa-brands fa-github" aria-hidden="true"></i></a>
+        <br>
+        <p>Derechos reservados @2020</p>
+        
+    </footer>
+    
+</body>
+</html>

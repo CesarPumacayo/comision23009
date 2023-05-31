@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Clase 21</title>
+    
+</head>
+<body>
+    <h1>Ultima clase de front-end</h1>
+    <div id="app">
+        <p>Kilometros:</p> <input type="text" v-model="Kilometros">
+        <p>Metros:</p> <input type="text" v-model="Metros">
+    </div>
+    
+    <script src="https://unpkg.com/vue@next"></script>
+    <script>
+        
+        Vue.component('saludo', {
+            template:"<h1>Esto es un nuevo componente de VUE</h1>"
+        });
+      const componente = new Vue({
+        el:"#saludos"
+      })
+      const {createApp} = Vue
+        createApp({
+
+            data() {
+                return {    
+                    Kilometros: 0,
+                    Metros: 0
+                }
+
+            },
+            watch: {
+                Kilometros(valor){
+                    this.Kilometros=valor
+                    this.Metros=valor*1000
+                },
+                Kilometros(valor){
+                    this.Kilometros=valor/1000
+                    this.Metros=valor
+                }
+            }
+        }).mount('#app')
+
+
+
+       
+
+    </script>
+</body>
+</html>

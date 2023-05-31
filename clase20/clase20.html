@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Clase 20</title>
+</head>
+<body>
+
+    <h1>Segunda clase de Vue</h1>
+    <!-- V-text es lo mismo con span de vue -->
+    <div id="app"> 
+        <h2>Hola {{ nombre }}</h2>
+        
+        <h2>{{ mensaje }}</h2>
+        
+        <p>Bienvenido {{ nombre }} a tu primer sitio con Vue</p>
+        
+        <b>Lo mismo usando directiva v-text</b>
+        
+        <p>La persona que ingreso a la pagina es <span v-text="nombre"></span></p>
+        
+        <h2>Que cantidad de productos quiere echar al carrito</h2>
+        
+        <button v-on:click="contador-=1">-</button><span>{{contador}}</span><button v-on:click="contador+=1">+</button>
+        
+        <p>El mensaje que recibio es <span v-text="mensaje"></span></p>
+        
+        <div v-html="oracion"></div>
+        
+        <h2>Directiva v-bind</h2>
+        
+        <a v-bind:href="url">google</a>
+        
+        <span v-show="mostrar"><br>v-show, mostrar o no</span>
+        
+        <span v-once><br>Hola soy {{nombre}} y les dejo un mensaje</span>
+        
+        <h2>Lista de frutas</h2>
+        <input type="text" v-model="frutaNueva">
+
+        <button v-on:click="sumarFruta()">Agregar fruta</button>
+
+        
+        <!-- <input type="text" v-model="cantidadNueva">
+
+        <button v-on:click="sumarFruta()">Agregar cantidad</button> -->
+
+        <li v-for="fruta in frutas">
+            {{fruta.nombre}} - {{fruta.cantidad}}
+            <span v-if="fruta.cantidad==0">(NO HAY STOCK)</span>
+        </li>
+
+    </div>
+    
+    
+    <!-- Script Vue -->
+    <script src="https://unpkg.com/vue@next"></script>
+    <script>
+
+    const{ createApp } = Vue
+    createApp({
+        data(){
+            return{
+
+                nombre: "Arturo",
+                mensaje: "Hola mundo!",
+                oracion: "<h3>Hola mundo, pero ahora desde un v-html</h3>",
+                url: "http://www.google.com.ar",
+                mostrar: true, // o False
+                contador: 0,
+                frutas: [
+                    {nombre:"Pera", cantidad: 0},
+                    {nombre:"Manzana", cantidad: 10},
+                    {nombre:"Banana", cantidad: 0},
+                    {nombre:"Naranja", cantidad: 10}
+                ],
+                frutaNueva:""
+
+            }
+        },
+        // Agrega nueva fruta con el methods, push lo pone a la lista
+        methods:{
+            sumarFruta(){
+                if(this.frutaNueva != "")
+                this.frutas.push({nombre:this.frutaNueva, cantidad:0})
+                this.frutaNueva=""
+            }
+        }
+    }).mount('#app')
+    </script> 
+    
+</body>
+</html>
